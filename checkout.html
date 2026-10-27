@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Livraison &amp; paiement | RAJA</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles/main.css?v=102">
+  <script src="https://cdn.c360a.salesforce.com/beacon/c360a/c3e8d765-e83d-4831-9382-99f4ead34885/scripts/c360a.min.js"></script>
+</head>
+<body>
+
+  <div class="promo-strip">
+    <div class="promo-strip__inner">
+      <img class="promo-strip__logo" src="assets/img/rajafolies-sticky.png" alt="RAJA Folies">
+      <span class="promo-strip__msg"><strong>La rentrée démarre FOOORT&nbsp;!</strong> Un cadeau offert dès 250&nbsp;€&nbsp;HT d'achat*&nbsp;!</span>
+      <a class="promo-strip__cta" href="#">J'en profite maintenant</a>
+      <button class="promo-strip__close" aria-label="Fermer">&#10005;</button>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="header-top">
+      <a class="header-top__logo" href="index.html"><img src="assets/img/logo-raja.svg" alt="RAJA"></a>
+      <div class="header-top__contact">
+        <strong>01 49 90 49 90</strong>
+        <span>(8h - 18h30)</span>
+      </div>
+      <div class="header-top__rating"><span class="stars icon-star"></span> 4,6/5<br>Avis client</div>
+      <form class="header-top__search" role="search">
+        <span class="header-top__search-icon icon-search" aria-hidden="true"></span>
+        <input type="search" placeholder="Rechercher un produit ou une référence" id="search-input">
+        <button type="button" class="mic icon-microphone" aria-label="Recherche vocale"></button>
+      </form>
+      <div class="header-top__icons">
+        <a href="#"><span class="icon icon-quick-time"></span>&nbsp;Achat express</a>
+        <a href="login.html" id="account-link"><span class="icon icon-account"></span><span class="label" id="account-label">Mon compte</span><span class="status-dot" id="account-dot" hidden></span><span class="chevron icon-dropdown"></span></a>
+        <a href="cart.html"><span class="icon icon-cart"></span><span class="label">Mon panier</span><span class="cart-count" id="cart-count">0</span><span class="chevron icon-dropdown"></span></a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="main-nav__inner">
+        <a class="main-nav__all" href="category.html"><svg class="burger-icon" viewBox="0 0 30 30" width="18" height="18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"><path d="M5,7.625 L25,7.625"></path><path d="M5,15.125 L25,15.125"></path><path d="M5,22.625 L25,22.625"></path></g></svg> Nos produits</a>
+        <ul>
+          <li><a href="#"><span class="icon-box"></span>&nbsp;Rechercher un carton</a></li>
+          <li><a href="#">Marque RAJA <span class="chevron icon-dropdown"></span></a></li>
+          <li><a href="#">Bons plans <span class="chevron icon-dropdown"></span></a></li>
+          <li><a href="#">Actualité produits <span class="chevron icon-dropdown"></span></a></li>
+          <li><a href="#">Nos univers <span class="chevron icon-dropdown"></span></a></li>
+          <li><a href="#">Services et expertise <span class="chevron icon-dropdown"></span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="wrap page-cart">
+
+      <nav class="checkout-breadcrumb" aria-label="Étapes de commande">
+        <ol>
+          <li class="checkout-breadcrumb__item">
+            <span class="checkout-breadcrumb__round">1</span>
+            <span class="checkout-breadcrumb__label">Panier</span>
+          </li>
+          <li class="checkout-breadcrumb__sep" aria-hidden="true"></li>
+          <li class="checkout-breadcrumb__item is-active">
+            <span class="checkout-breadcrumb__round">2</span>
+            <span class="checkout-breadcrumb__label">Livraison &amp; paiement</span>
+          </li>
+        </ol>
+      </nav>
+
+      <p class="cart-empty" id="checkoutEmpty" hidden>Votre panier est vide. <a href="index.html">Continuer mes achats</a></p>
+
+      <div class="cart-layout" id="checkoutLayout">
+        <div class="cart-main">
+          <div class="cart-lines" id="checkoutLines"></div>
+        </div>
+
+        <aside class="cart-recap">
+          <h2 class="cart-recap__title">Récapitulatif</h2>
+          <ul class="cart-recap__list">
+            <li class="cart-recap__row">
+              <span class="cart-recap__label">Sous-total HT</span>
+              <span class="cart-recap__value" id="checkoutSubtotal">0,00&nbsp;€</span>
+            </li>
+            <li class="cart-recap__row">
+              <span class="cart-recap__label">Frais de livraison HT</span>
+              <span class="cart-recap__value" id="checkoutShipping">12,90&nbsp;€</span>
+            </li>
+          </ul>
+
+          <hr class="cart-recap__sep">
+
+          <ul class="cart-recap__list">
+            <li class="cart-recap__row cart-recap__row--total">
+              <span class="cart-recap__label">Total HT</span>
+              <span class="cart-recap__value" id="checkoutTotalHT">0,00&nbsp;€</span>
+            </li>
+            <li class="cart-recap__row">
+              <span class="cart-recap__label">TVA</span>
+              <span class="cart-recap__value" id="checkoutTva">0,00&nbsp;€</span>
+            </li>
+            <li class="cart-recap__row cart-recap__row--ttc">
+              <span class="cart-recap__label">TOTAL TTC</span>
+              <span class="cart-recap__value" id="checkoutTotalTTC">0,00&nbsp;€</span>
+            </li>
+          </ul>
+
+          <hr class="cart-recap__sep">
+
+          <button type="button" id="checkoutConfirmBtn" class="cart-recap__cta">Confirmer ma commande<span class="icon-arrow"></span></button>
+        </aside>
+      </div>
+
+      <p class="cart-recap__confirm" id="checkoutConfirmMsg" hidden>Merci, votre commande est confirmée&nbsp;!</p>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__link-need">
+      <div class="wrap wrap--home footer__link-need__inner">
+        <div class="footer__link-need__link--group">
+          <div class="footer__link-need__link__list">
+            <div class="footer__link-need__link__list__title">Groupe RAJA</div>
+            <ul class="footer__link-need__link__dropdown">
+              <li><a href="#">Qui sommes-nous ?</a></li>
+              <li><a href="#">Nos engagements</a></li>
+              <li><a href="#">Notre démarche éco-responsable</a></li>
+              <li><a href="#">Rejoindre le groupe</a></li>
+              <li><a href="#">Découvrir le Groupe RAJA</a></li>
+              <li><a href="#">Notre Politique Achat</a></li>
+            </ul>
+          </div>
+          <div class="footer__link-need__link__list">
+            <div class="footer__link-need__link__list__title">Services RAJA</div>
+            <ul class="footer__link-need__link__dropdown">
+              <li><a href="#">Livraison en 24h</a></li>
+              <li><a href="#">Disponibilité en stock</a></li>
+              <li><a href="#">Solutions Grands Comptes</a></li>
+              <li><a href="#">Solutions e-business</a></li>
+              <li><a href="#">Codes Promo</a></li>
+              <li><a href="#">RAJA vous accompagne</a></li>
+              <li><a href="#">Fonctionnalités digitales</a></li>
+            </ul>
+          </div>
+          <div class="footer__link-need__link__list">
+            <div class="footer__link-need__link__list__title">Actualités</div>
+            <ul class="footer__link-need__link__dropdown">
+              <li><a href="#">Actualités RAJA</a></li>
+              <li><a href="#">Témoignages clients</a></li>
+              <li><a href="#">Fonds d'urgence de la Fondation RAJA-Danièle Marcovici</a></li>
+            </ul>
+          </div>
+          <div class="footer__link-need__link__list">
+            <div class="footer__link-need__link__list__title">Personnalisation</div>
+            <ul class="footer__link-need__link__dropdown">
+              <li><a href="#">Emballages personnalisés</a></li>
+              <li><a href="#">Adhésifs personnalisés</a></li>
+              <li><a href="#">Emballages sur mesure</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__link-need__link--block">
+          <div class="footer__link-need__link__list">
+            <div class="footer__link-need__link__list__title">Univers Produits</div>
+            <ul class="footer__link-need__link__dropdown">
+              <li><a href="#">Produits Made in Europe</a></li>
+              <li><a href="#">Produits Marque RAJA</a></li>
+              <li><a href="#">Nouveaux produits</a></li>
+              <li><a href="#">Produits éco-responsables</a></li>
+              <li><a href="#">Tout pour l'emballage</a></li>
+              <li><a href="#">Tout pour l'e-commerce</a></li>
+              <li><a href="#">Tout pour la boutique</a></li>
+              <li><a href="#">Manutention &amp; Stockage</a></li>
+              <li><a href="#">Hygiène, Entretien &amp; Sécurité</a></li>
+              <li><a href="#">Fournitures de bureau</a></li>
+              <li><a href="#">Emballages alimentaires</a></li>
+              <li><a href="#">Produits solidaires</a></li>
+              <li><a href="#">Tous nos univers produits</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__link-need__link--need">
+          <div class="footer__link-need__social">
+            <div class="footer__link-need__social__title">Suivez-nous&nbsp;!</div>
+            <div class="footer__link-need__social__list">
+              <a href="https://www.linkedin.com/company/raja" target="_blank" rel="noopener"><img src="https://raja.scene7.com/is/image/Raja/ALL-footer-social-media-linkedin?fmt=png-alpha&wid=60" alt="Linkedin"></a>
+              <a href="https://www.facebook.com/RAJAEMBALLAGES" target="_blank" rel="noopener"><img src="https://raja.scene7.com/is/image/Raja/ALL-footer-social-media-facebook?fmt=png-alpha&wid=60" alt="Facebook"></a>
+              <a href="https://www.instagram.com/raja_emballages/" target="_blank" rel="noopener"><img src="https://raja.scene7.com/is/image/Raja/ALL-footer-social-media-instagram?fmt=png-alpha&wid=60" alt="Instagram"></a>
+              <a href="https://www.youtube.com/user/Rajaemballage" target="_blank" rel="noopener"><img src="https://raja.scene7.com/is/image/Raja/ALL-footer-social-media-youtube?fmt=png-alpha&wid=60" alt="Youtube"></a>
+              <a href="https://twitter.com/RAJA_Emballages" target="_blank" rel="noopener"><img src="https://raja.scene7.com/is/image/Raja/ALL-footer-social-media-twitter?fmt=png-alpha&wid=60" alt="Twitter"></a>
+              <a href="https://www.raja.fr/blog/" target="_blank" rel="noopener"><img src="https://raja.scene7.com/is/image/Raja/ALL-footer-social-media-blog?fmt=png-alpha&wid=110" alt="Blog RAJA"></a>
+            </div>
+          </div>
+          <div class="footer__link-need__link__list">
+            <div class="footer__link-need__link__list__title"><span class="icon-help"></span> Besoin d'aide&nbsp;?</div>
+            <p class="footer__link-need__link__list__txt">Retrouvez une réponse à toutes vos questions et infos pratiques</p>
+            <ul class="footer__link-need__link__dropdown">
+              <li><a href="#">Contactez-nous</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Formulaire de contact</a></li>
+              <li><a href="#">Plan d'accès</a></li>
+              <li><a href="#">1ère visite</a></li>
+              <li><a href="#">Je m'inscris aux newsletters</a></li>
+              <li><a href="#">Médiateur des relations fournisseurs</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__certificats">
+      <div class="wrap wrap--home footer__certificats__inner">
+        <a title="Fondation RAJA" href="https://www.fondation-raja-marcovici.com" target="_blank" rel="noopener"><img src="assets/img/certif-fondation-raja.png" alt="Fondation RAJA"></a>
+        <img src="assets/img/certif-charte-diversite.png" alt="Charte de la diversité">
+        <a title="RAJA Art" href="https://www.collection-raja-art.com/" target="_blank" rel="noopener"><img src="assets/img/certif-raja-art.png" alt="RAJA Art"></a>
+      </div>
+    </div>
+    <div class="footer__site-payment">
+      <div class="wrap wrap--home footer__site-payment__inner">
+        <a title="Téléchargez la Fiche d'évaluation" href="https://imgnews.raja-group.com/00-structure/footer/fiche_evaluation_EcoVadis_2026.pdf" target="_blank" rel="noopener"><img src="assets/img/certif-ecovadis.png" alt="Ecovadis"></a>
+        <a title="Téléchargez le Certificat" href="https://imgnews.raja-group.com/00-structure/footer/Certificat_ISO_9001_14001_RAJA.pdf" target="_blank" rel="noopener"><img src="assets/img/certif-afaq-iso14001.png" alt="AFAQ ISO 14001"></a>
+        <a title="Téléchargez le Certificat" href="https://imgnews.raja-group.com/00-structure/footer/Certificat_ISO_9001_14001_RAJA.pdf" target="_blank" rel="noopener"><img src="assets/img/certif-afaq-iso9001.png" alt="AFAQ ISO 9001"></a>
+        <img src="assets/img/certif-charte-qualite-fevad.png" alt="Charte Qualité Fevad">
+        <img src="assets/img/certif-charte-relations-fournisseurs.png" alt="Charte RFAR">
+      </div>
+    </div>
+    <div class="footer__countries">
+      <div class="wrap wrap--home">
+        <div class="footer__countries__title">Le groupe RAJA en Europe</div>
+        <div class="footer__countries__list">
+          <a href="https://www.rajapack.de" title="RAJAPACK DE" hreflang="de-de" class="flag-icon-1"></a>
+          <a href="https://www.rajapack.at" title="RAJAPACK AT" hreflang="de-at" class="flag-icon-2"></a>
+          <a href="https://www.rajapack.be/nl_BE/" title="RAJAPACK BE" hreflang="nl-be" class="flag-icon-3"></a>
+          <a href="https://www.rajapack.sk" title="RAJAPACK SK" hreflang="sk-sk" class="flag-icon-4"></a>
+          <a href="https://www.rajapack.dk" title="RAJAPACK DK" hreflang="da-dk" class="flag-icon-5"></a>
+          <a href="https://www.rajapack.es" title="RAJAPACK ES" hreflang="es-es" class="flag-icon-6"></a>
+          <a href="https://www.raja.fr" title="RAJA FR" hreflang="fr-fr" class="flag-icon-7"></a>
+          <a href="https://www.rajapack.it" title="RAJAPACK IT" hreflang="it-it" class="flag-icon-8"></a>
+          <a href="https://www.rajapack.no" title="RAJAPACK NO" hreflang="no-no" class="flag-icon-9"></a>
+          <a href="https://www.rajapack.nl" title="RAJAPACK NL" hreflang="nl-nl" class="flag-icon-10"></a>
+          <a href="https://www.rajapack.pl" title="RAJAPACK PL" hreflang="pl-pl" class="flag-icon-11"></a>
+          <a href="https://www.rajapack.pt" title="RAJAPACK PT" hreflang="pt-pt" class="flag-icon-12"></a>
+          <a href="https://www.rajapack.cz" title="RAJAPACK CZ" hreflang="cs-cz" class="flag-icon-13"></a>
+          <a href="https://www.rajapack.se" title="RAJAPACK SE" hreflang="sv-se" class="flag-icon-14"></a>
+          <a href="https://www.rajapack.ch/fr_CH/" title="RAJAPACK CH" hreflang="fr_ch" class="flag-icon-15"></a>
+          <a href="https://www.rajapack.co.uk/" title="RAJAPACK UK" hreflang="en-GB" class="flag-icon-16"></a>
+          <a href="https://www.rajapack.hu" title="RAJAPACK HU" hreflang="hu-hu" class="flag-icon-17"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 RAJA</span>
+      <a href="#">Mentions légales</a>
+      <a href="#">Confidentialité</a>
+      <a href="#">CGV</a>
+      <a href="#">Cookies</a>
+      <a href="#">Préférences de cookies</a>
+    </div>
+  </footer>
+
+  <script src="scripts/perso.js" defer></script>
+  <script src="scripts/app.js" defer></script>
+</body>
+</html>

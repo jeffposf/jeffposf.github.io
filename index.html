@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>RAJA - Fournisseur d'emballages pour les entreprises</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles/main.css?v=42">
+  <script src="https://cdn.c360a.salesforce.com/beacon/c360a/c3e8d765-e83d-4831-9382-99f4ead34885/scripts/c360a.min.js"></script>
+</head>
+<body>
+
+  <div class="promo-strip">
+    <div class="promo-strip__inner">
+      <img class="promo-strip__logo" src="assets/img/rajafolies-sticky.png" alt="RAJA Folies">
+      <span class="promo-strip__msg"><strong>La rentrée démarre FOOORT&nbsp;!</strong> Un cadeau offert dès 250&nbsp;€&nbsp;HT d'achat*&nbsp;!</span>
+      <a class="promo-strip__cta" href="#">J'en profite maintenant</a>
+      <button class="promo-strip__close" aria-label="Fermer">&#10005;</button>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="header-top">
+      <a class="header-top__logo" href="index.html"><img src="assets/img/logo-raja.svg" alt="RAJA"></a>
+      <div class="header-top__contact">
+        <strong>01 49 90 49 90</strong>
+        <span>(8h - 18h30)</span>
+      </div>
+      <div class="header-top__rating"><span class="stars icon-star"></span> 4,6/5<br>Avis client</div>
+      <form class="header-top__search" role="search">
+        <span class="header-top__search-icon icon-search" aria-hidden="true"></span>
+        <input type="search" placeholder="Rechercher un produit ou une référence" id="search-input">
+        <button type="button" class="mic icon-microphone" aria-label="Recherche vocale"></button>
+      </form>
+      <div class="header-top__icons">
+        <button type="button" class="lang-switch" id="lang-switch" aria-label="Changer de langue">EN</button>
+        <a href="#"><span class="icon icon-quick-time"></span>&nbsp;Achat express</a>
+        <a href="login.html" id="account-link"><span class="icon icon-account"></span><span class="label" id="account-label">Mon compte</span><span class="status-dot" id="account-dot" hidden></span><span class="chevron icon-dropdown"></span></a>
+        <a href="cart.html"><span class="icon icon-cart"></span><span class="label">Mon panier</span><span class="cart-count" id="cart-count">0</span><span class="chevron icon-dropdown"></span></a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="main-nav__inner">
+        <a class="main-nav__all" href="category.html"><svg class="burger-icon" viewBox="0 0 30 30" width="18" height="18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round"><path d="M5,7.625 L25,7.625"></path><path d="M5,15.125 L25,15.125"></path><path d="M5,22.625 L25,22.625"></path></g></svg> Nos produits</a>
+        <ul>
+          <li><a href="#"><span class="icon-box"></span>&nbsp;Rechercher un carton</a></li>
+          <li><a href="#">Marque RAJA <span class="chevron icon-dropdown"></span></a></li>
+          <li><a href="#">Bons plans <span class="chevron icon-dropdown"></span></a></li>
+          <li><a href="#">Actualité produits <span class="chevron icon-dropdown"></span></a></li>
+          <li><a href="#">Nos univers <span class="chevron icon-dropdown"></span></a></li>
+          <li><a href="#">Services et expertise <span class="chevron icon-dropdown"></span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="wrap wrap--home">
+        <div class="hero__grid">
+          <a class="hero__main" href="category.html">
+            <img src="assets/img/2412-FR-BHP-L-first-order.jpg" alt="Offre de bienvenue -20% sur votre 1ère commande">
+          </a>
+          <div class="hero__side">
+            <a class="hero__promo hero__promo--orange" href="category.html">
+              <img src="assets/img/2609-FR-BHP-M-custom-tapes-offer-2.jpg" alt="-15% sur vos adhésifs personnalisés">
+            </a>
+            <div class="hero__promo--split">
+              <a class="hero__promo hero__promo--blue" href="category.html">
+                <img src="assets/img/2609-FR-BHP-S-G0926-commitment-2.jpg" alt="La marque engagée">
+              </a>
+              <a class="hero__promo hero__promo--grey" href="category.html">
+                <img src="assets/img/2609-FR-BHP-S-janitorial-responsible-04.jpg" alt="Les plus grandes marques d'hygiène">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-returning" id="hero-returning" hidden>
+      <div class="wrap wrap--home">
+        <a class="hero-returning__banner" href="#">
+          <img class="hero-returning__image" alt="" hidden>
+          <span class="hero-returning__text"><span class="hero-returning__headline"></span><br><span class="hero-returning__subheadline"></span></span>
+          <span class="hero-returning__cta"></span>
+        </a>
+      </div>
+    </section>
+
+    <h1 class="stock-strip wrap wrap--home"><strong>+ de 12 000 produits</strong> d'emballages et d'équipements <strong>en stock</strong> livrés en <strong>24h</strong></h1>
+
+    <nav class="cat-tiles" aria-label="Catégories">
+      <a class="cat-tile" href="category.html?cat=C11"><span class="cat-tile__icon"><img src="assets/icons/cat-01.png" alt=""></span><span>Caisses carton, boîtes</span></a>
+      <a class="cat-tile" href="category.html?cat=C15"><span class="cat-tile__icon"><img src="assets/icons/cat-02.png" alt=""></span><span>Adhésifs, cerclage, collage</span></a>
+      <a class="cat-tile" href="category.html?cat=C12"><span class="cat-tile__icon"><img src="assets/icons/cat-03.png" alt=""></span><span>Enveloppes, pochettes</span></a>
+      <a class="cat-tile" href="category.html?cat=C13"><span class="cat-tile__icon"><img src="assets/icons/cat-04.png" alt=""></span><span>Sacherie, conditionnement</span></a>
+      <a class="cat-tile" href="category.html?cat=C14"><span class="cat-tile__icon"><img src="assets/icons/cat-05.png" alt=""></span><span>Calage, protection</span></a>
+      <a class="cat-tile" href="category.html?cat=C16"><span class="cat-tile__icon"><img src="assets/icons/cat-06.png" alt=""></span><span>Etiquetage, signalisation</span></a>
+      <a class="cat-tile" href="category.html?cat=C17"><span class="cat-tile__icon"><img src="assets/icons/cat-07.png" alt=""></span><span>Film, palettisation</span></a>
+      <a class="cat-tile" href="category.html?cat=C18"><span class="cat-tile__icon"><img src="assets/icons/cat-09.png" alt=""></span><span>Machines d'emballage</span></a>
+      <a class="cat-tile" href="category.html?cat=C90"><span class="cat-tile__icon"><img src="assets/icons/cat-10.png" alt=""></span><span>Stockage</span></a>
+      <a class="cat-tile" href="category.html?cat=C1910"><span class="cat-tile__icon"><img src="assets/icons/cat-11.png" alt=""></span><span>Manutention</span></a>
+      <a class="cat-tile" href="category.html?cat=C92"><span class="cat-tile__icon"><img src="assets/icons/cat-13.png" alt=""></span><span>Équipements et sécurité</span></a>
+      <a class="cat-tile" href="category.html?cat=C21"><span class="cat-tile__icon"><img src="assets/icons/cat-12.png" alt=""></span><span>Fournitures et mobilier de bureau</span></a>
+      <a class="cat-tile" href="category.html?cat=C20"><span class="cat-tile__icon"><img src="assets/icons/cat-14.png" alt=""></span><span>Entretien, hygiène</span></a>
+      <a class="cat-tile" href="category.html?cat=C24"><span class="cat-tile__icon"><img src="assets/icons/cat-16.png" alt=""></span><span>Protection individuelle</span></a>
+      <a class="cat-tile" href="category.html?cat=C22"><span class="cat-tile__icon"><img src="assets/icons/cat-15.png" alt=""></span><span>Emballages alimentaires</span></a>
+      <a class="cat-tile" href="category.html?cat=C23"><span class="cat-tile__icon"><img src="assets/icons/cat-08.png" alt=""></span><span>Emballages boutiques</span></a>
+    </nav>
+
+    <div class="box-finder">
+      <div class="wrap wrap--home box-finder__inner">
+        <p class="box-finder__title">Je trouve<br>mes formats</p>
+        <hr class="box-finder__sep">
+        <div class="box-finder__pitch">
+          <div class="box-finder__pitch-text">
+            <p class="box-finder__highlight">Plus de 1200 formats en stock&nbsp;!</p>
+            <p>Entrer les dimensions intérieures en cm<br>(Longueur x largeur x Hauteur)&nbsp;:</p>
+          </div>
+          <img class="box-finder__img" src="assets/img/box-finder.png" alt="Longueur x largeur x hauteur">
+        </div>
+        <form class="box-finder__form">
+          <div class="box-finder__field">
+            <label for="pdct_BX_Lo">Longueur</label>
+            <input type="number" min="1" step="any" id="pdct_BX_Lo" name="pdct_BX_Lo" placeholder="cm">
+          </div>
+          <div class="box-finder__field">
+            <label for="pdct_BX_La">largeur</label>
+            <input type="number" min="1" step="any" id="pdct_BX_La" name="pdct_BX_La" placeholder="cm">
+          </div>
+          <div class="box-finder__field">
+            <label for="pdct_BX_Ha">Hauteur</label>
+            <input type="number" min="1" step="any" id="pdct_BX_Ha" name="pdct_BX_Ha" placeholder="cm">
+          </div>
+          <button type="button" class="box-finder__submit">Trouver&nbsp;mon&nbsp;carton</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="reco-slider" data-zone="home-reco-potions">
+      <div class="wrap wrap--home">
+        <div class="reco-slider__head">
+          <h2 class="reco-slider__title">Ces produits pourraient vous intéresser</h2>
+          <span class="reco-slider__rule"></span>
+        </div>
+        <div class="reco-slider__wrap">
+          <div class="reco-slider__track" id="reco-track">
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-30&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=OFF_FR_875"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/caisse-carton-standard-double-cannelure-raja_OFF_FR_875.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_CAD_WEB_ACCESSORY_01&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Caisse carton standard double cannelure RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=OFF_FR_875">Caisse carton standard double cannelure RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">1&nbsp;704 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>0,84&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la caisse</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-25&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=OFF_FR_798"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/caisse-carton-brune-simple-cannelure-raja_OFF_FR_798.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_CAS_WEB_ACCESSORY_01&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Caisse carton brune simple cannelure RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=OFF_FR_798">Caisse carton brune simple cannelure RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">1&nbsp;688 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>0,42&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la caisse</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-25&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=OFF_FR_297"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/bo-carton-exp-dition-simple-cannelure-brune-rajapost_OFF_FR_297.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_RPT07B_R_A_075_F&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Boîte carton d'expédition simple cannelure brune RAJAPOST"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=OFF_FR_297">Boîte carton d'expédition simple cannelure brune RAJAPOST</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">1&nbsp;788 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>0,39&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la boîte</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-25&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=PDT02198"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/pochette-matelass-e-bulles-co-blanche-raja_PDT02198.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_PMBL0C_PACKSHOT_05&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Pochette matelassée bulles Éco blanche RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=PDT02198">Pochette matelassée bulles Éco blanche RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">676 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>20,20&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">le paquet de 100</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-25&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=PDT01547"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/ruban-adh-sif-polypropyl-silencieux-r-sistant-35-microns-raja_PDT01547.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_ADP26_ADV291_CAD_FR&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Ruban adhésif polypropylène silencieux résistant 35 microns RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=PDT01547">Ruban adhésif polypropylène silencieux résistant 35 microns RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">497 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>1,32&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">le rouleau</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-30&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=PDT12578"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/caisse-carton-brune-simple-cannelure-montage-instantan-fermeture-adh-sive-raja_PDT12578.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_PF_WEB_ACCESSORY_01&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Caisse carton brune simple cannelure à montage instantané et fermeture adhésive RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=PDT12578">Caisse carton brune simple cannelure à montage instantané et fermeture adhésive RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">452 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>0,81&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la caisse</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-35&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=PDT02454"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/film-tirable-manuel-cast-transparent-raja_PDT02454.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_FEB13_FED201_CAD_01_FR&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Film étirable manuel cast transparent RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=PDT02454">Film étirable manuel cast transparent RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">526 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>13,90&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la bobine</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-25&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=OFF_FR_1572"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/caisse-carton-plate-brune-simple-cannelure-raja_OFF_FR_1572.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_CAS34A_D_A3_072_F&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Caisse carton plate brune simple cannelure RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=OFF_FR_1572">Caisse carton plate brune simple cannelure RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">178 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>0,57&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la caisse</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-30&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=OFF_FR_414"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/film-bulles-50-recycl-10-mm-pr-coupe-raja_OFF_FR_414.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_MCB50A_G_FR&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Film bulles 50% recyclé Ø 10 mm sans prédécoupe RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=OFF_FR_414">Film bulles 50% recyclé Ø 10 mm sans prédécoupe RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">342 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>26,65&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">le rouleau</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-20&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=OFF_FR_1676"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/caisse-carton-brune-simple-cannelure-montage-instantan-raja_OFF_FR_1676.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_CFA_WEB_ACCESSORY_01&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Caisse carton brune simple cannelure à montage instantané RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=OFF_FR_1676">Caisse carton brune simple cannelure à montage instantané RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">248 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>0,58&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la caisse</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=PDT01831"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/caisse-carton-galia-double-cannelure_PDT01831.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_A16_G_P_FR&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Caisse carton Galia double cannelure"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=PDT01831">Caisse carton Galia double cannelure</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">71 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>1,64&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la caisse</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-25&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=PDT01531"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/caisse-carton-longue-simple-cannelure-raja_PDT01531.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_BL-SW_WEB_ACCESSORY_01&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Caisse carton longue simple cannelure RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=PDT01531">Caisse carton longue simple cannelure RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">401 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>1,11&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la caisse</p>
+              </div>
+            </div>
+          </article>
+
+          </div>
+          <button type="button" class="reco-slider__nav reco-slider__nav--prev" aria-label="Précédent" onclick="document.getElementById('reco-track').scrollBy({left:-296,behavior:'smooth'})"><span class="icon-dropdown"></span></button>
+          <button type="button" class="reco-slider__nav reco-slider__nav--next" aria-label="Suivant" onclick="document.getElementById('reco-track').scrollBy({left:296,behavior:'smooth'})"><span class="icon-dropdown"></span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="mini-banner mini-banner--red">
+      <a class="mini-banner__link" href="category.html?cat=C9660" aria-hidden="true" tabindex="-1"></a>
+      <div class="wrap wrap--home mini-banner__inner">
+        <div class="mini-banner__header">
+          <img class="mini-banner__pic" src="assets/img/mini-banner-best-prices.png" width="210" height="110" alt="">
+        </div>
+        <div class="mini-banner__content">
+          <p class="mini-banner__content-title">PLUS DE 600 BEST SELLERS AU MEILLEUR PRIX&nbsp;!</p>
+          <p class="mini-banner__content-description">RAJA s'engage pour protéger votre budget&nbsp;!</p>
+        </div>
+        <button type="button" class="mini-banner__cta">JE COMMANDE&nbsp;!</button>
+      </div>
+    </section>
+
+    <section class="selection-bloc">
+      <div class="wrap wrap--home selection-bloc__grid">
+        <h2 class="selection-bloc__title">Découvrez nos sélections de produits adaptés à votre activité</h2>
+        <div class="selection-bloc__content">
+          <ul class="selection-bloc__list">
+            <li><a href="category.html">E-commerce <span class="icon-arrow"></span></a></li>
+            <li><a href="category.html">Logistique <span class="icon-arrow"></span></a></li>
+            <li><a href="category.html">Commerces de détail <span class="icon-arrow"></span></a></li>
+            <li><a href="category.html">Commerces alimentaires <span class="icon-arrow"></span></a></li>
+            <li><a href="category.html">Nettoyage et entretien <span class="icon-arrow"></span></a></li>
+          </ul>
+          <button type="button" class="selection-bloc__cta">Voir toutes les boutiques</button>
+        </div>
+        <div class="selection-bloc__images">
+          <div class="selection-bloc__item selection-bloc__rect selection-bloc__rect--orange"></div>
+          <div class="selection-bloc__item selection-bloc__rect selection-bloc__rect--blue"></div>
+          <div class="selection-bloc__item selection-bloc__rect selection-bloc__rect--green"></div>
+          <div class="selection-bloc__item selection-bloc__img-wrap selection-bloc__img-wrap--warehouse">
+            <img src="assets/img/selection-warehouse.jpg" alt="Entrepôt">
+          </div>
+          <div class="selection-bloc__item selection-bloc__img-wrap selection-bloc__img-wrap--ecommerce">
+            <img src="assets/img/selection-ecommerce.jpg" alt="Ecommerce">
+          </div>
+          <div class="selection-bloc__item selection-bloc__img-wrap selection-bloc__img-wrap--boutique">
+            <img src="assets/img/selection-boutique.jpg" alt="Boutique">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reco-slider" data-zone="home-reco-potions-2">
+      <div class="wrap wrap--home">
+        <div class="reco-slider__head">
+          <h2 class="reco-slider__title">Nos suggestions pour vous</h2>
+          <span class="reco-slider__rule"></span>
+        </div>
+        <div class="reco-slider__wrap">
+          <div class="reco-slider__track" id="reco-track-2">
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-30&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=OFF_FR_875"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/caisse-carton-standard-double-cannelure-raja_OFF_FR_875.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_CAD_WEB_ACCESSORY_01&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Caisse carton standard double cannelure RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=OFF_FR_875">Caisse carton standard double cannelure RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">1&nbsp;704 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>0,84&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la caisse</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-25&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=OFF_FR_1572"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/caisse-carton-plate-brune-simple-cannelure-raja_OFF_FR_1572.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_CAS34A_D_A3_072_F&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Caisse carton plate brune simple cannelure RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=OFF_FR_1572">Caisse carton plate brune simple cannelure RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">178 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>0,57&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la caisse</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-25&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=PDT02198"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/pochette-matelass-e-bulles-co-blanche-raja_PDT02198.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_PMBL0C_PACKSHOT_05&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Pochette matelassée bulles Éco blanche RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=PDT02198">Pochette matelassée bulles Éco blanche RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">676 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>20,20&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">le paquet de 100</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-35&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=PDT02454"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/film-tirable-manuel-cast-transparent-raja_PDT02454.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_FEB13_FED201_CAD_01_FR&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Film étirable manuel cast transparent RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=PDT02454">Film étirable manuel cast transparent RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">526 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>13,90&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la bobine</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-30&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=OFF_FR_414"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/film-bulles-50-recycl-10-mm-pr-coupe-raja_OFF_FR_414.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_MCB50A_G_FR&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Film bulles 50% recyclé Ø 10 mm sans prédécoupe RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=OFF_FR_414">Film bulles 50% recyclé Ø 10 mm sans prédécoupe RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">342 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>26,65&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">le rouleau</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-25&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=OFF_FR_798"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/caisse-carton-brune-simple-cannelure-raja_OFF_FR_798.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_CAS_WEB_ACCESSORY_01&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Caisse carton brune simple cannelure RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=OFF_FR_798">Caisse carton brune simple cannelure RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">1&nbsp;688 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>0,42&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la caisse</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-25&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=PDT01547"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/ruban-adh-sif-polypropyl-silencieux-r-sistant-35-microns-raja_PDT01547.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_ADP26_ADV291_CAD_FR&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Ruban adhésif polypropylène silencieux résistant 35 microns RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=PDT01547">Ruban adhésif polypropylène silencieux résistant 35 microns RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">497 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>1,32&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">le rouleau</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-25&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=PDT01531"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/caisse-carton-longue-simple-cannelure-raja_PDT01531.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_BL-SW_WEB_ACCESSORY_01&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Caisse carton longue simple cannelure RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=PDT01531">Caisse carton longue simple cannelure RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">401 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>1,11&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la caisse</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-30&nbsp;%</span></div>
+            <div class="reco-slider__body">
+              <a href="product.html?sku=PDT01831"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/caisse-carton-galia-double-cannelure_PDT01831.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_A16_G_P_FR&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Caisse carton Galia double cannelure"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=PDT01831">Caisse carton Galia double cannelure</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">71 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>1,64&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la caisse</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-25&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=OFF_FR_297"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/bo-carton-exp-dition-simple-cannelure-brune-rajapost_OFF_FR_297.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_RPT07B_R_A_075_F&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Boîte carton d'expédition simple cannelure brune RAJAPOST"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=OFF_FR_297">Boîte carton d'expédition simple cannelure brune RAJAPOST</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">1&nbsp;788 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>0,39&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la boîte</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-30&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=PDT12578"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/caisse-carton-brune-simple-cannelure-montage-instantan-fermeture-adh-sive-raja_PDT12578.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_PF_WEB_ACCESSORY_01&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Caisse carton brune simple cannelure à montage instantané et fermeture adhésive RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=PDT12578">Caisse carton brune simple cannelure à montage instantané et fermeture adhésive RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">452 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>0,81&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la caisse</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="reco-slider__card">
+            <div class="reco-slider__badges"><span class="badge badge--best">Best Price</span><span class="badge badge--reduce">Jusqu'à&nbsp;-20&nbsp;%</span></div>
+            <img class="reco-slider__brand" src="assets/img/raja-brand-badge.png" width="24" height="24" alt="RAJA">
+            <div class="reco-slider__body">
+              <a href="product.html?sku=OFF_FR_1676"><img class="reco-slider__img" src="https://raja.scene7.com/is/image/Raja/products/caisse-carton-brune-simple-cannelure-montage-instantan-raja_OFF_FR_1676.jpg?template=TemplatePictoImageCard&amp;$ImageMain=M_CFA_WEB_ACCESSORY_01&amp;$PictoRight=NoPicto&amp;$PictoLeft=NoPicto&amp;resMode=sharp2&amp;op_usm=1.75,0.3,2,0" alt="Caisse carton brune simple cannelure à montage instantané RAJA"></a>
+              <div class="reco-slider__info">
+                <a class="reco-slider__name" href="product.html?sku=OFF_FR_1676">Caisse carton brune simple cannelure à montage instantané RAJA</a>
+                <div class="reco-slider__rating"><span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:90%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span><span class="reco-slider__reviews">248 avis</span></div>
+                <p class="reco-slider__from">À partir de</p>
+                <p class="reco-slider__price"><strong>0,58&nbsp;€</strong><span class="ht">HT</span></p>
+                <p class="reco-slider__unit">la caisse</p>
+              </div>
+            </div>
+          </article>
+
+          </div>
+          <button type="button" class="reco-slider__nav reco-slider__nav--prev" aria-label="Précédent" onclick="document.getElementById('reco-track-2').scrollBy({left:-296,behavior:'smooth'})"><span class="icon-dropdown"></span></button>
+          <button type="button" class="reco-slider__nav reco-slider__nav--next" aria-label="Suivant" onclick="document.getElementById('reco-track-2').scrollBy({left:296,behavior:'smooth'})"><span class="icon-dropdown"></span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="opinions-zone">
+      <div class="wrap wrap--home opinions-zone__inner">
+        <div class="opinions-zone__score">
+          <span class="opinions-zone__score-value"><strong>4.6</strong>/5</span>
+          <div class="opinions-zone__score-stars">
+            <span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:92%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+            <span class="opinions-zone__score-count">Nombre total d'avis&nbsp;: 551</span>
+          </div>
+          <img class="opinions-zone__logo" src="assets/img/avis-verifies-logo.png" alt="Avis Vérifiés">
+        </div>
+        <div class="opinions-zone__wrap">
+          <div class="opinions-zone__track" id="opinions-track">
+
+            <article class="opinions-zone__card">
+              <span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:100%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+              <p class="opinions-zone__card-title">Rapide, efficace et des produits de trés bonne qualités</p>
+              <p class="opinions-zone__card-meta">Avis déposé par <span class="uppercase">Anonyme,</span> le 09/09/2026, suite à un achat le 18/08/2026</p>
+            </article>
+
+            <article class="opinions-zone__card">
+              <span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:80%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+              <p class="opinions-zone__card-title">De bons produits, avec des prix corrects.<br>Seul petit soucis, l'expédition en vrac qui est un vrai casse-tête pour les transporteurs, avec des délais parfois longs&nbsp;!</p>
+              <p class="opinions-zone__card-meta">Avis déposé par <span class="uppercase">Anonyme,</span> le 09/09/2026, suite à un achat le 18/08/2026</p>
+            </article>
+
+            <article class="opinions-zone__card">
+              <span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:80%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+              <p class="opinions-zone__card-title">TARIF ELEVES</p>
+              <p class="opinions-zone__card-meta">Avis déposé par <span class="uppercase">Anonyme,</span> le 09/09/2026, suite à un achat le 13/08/2026</p>
+            </article>
+
+            <article class="opinions-zone__card">
+              <span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:100%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+              <p class="opinions-zone__card-title">produit de qualité et livraison supra rapide</p>
+              <p class="opinions-zone__card-meta">Avis déposé par <span class="uppercase">Anonyme,</span> le 02/09/2026, suite à un achat le 04/08/2026</p>
+            </article>
+
+            <article class="opinions-zone__card">
+              <span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:100%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+              <p class="opinions-zone__card-title">Tout était parfait comme d'habitude</p>
+              <p class="opinions-zone__card-meta">Avis déposé par <span class="uppercase">Anonyme,</span> le 02/09/2026, suite à un achat le 12/08/2026</p>
+            </article>
+
+            <article class="opinions-zone__card">
+              <span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:100%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+              <p class="opinions-zone__card-title">Très bien&nbsp;!</p>
+              <p class="opinions-zone__card-meta">Avis déposé par <span class="uppercase">Anonyme,</span> le 02/09/2026, suite à un achat le 20/08/2026</p>
+            </article>
+
+            <article class="opinions-zone__card">
+              <span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:80%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+              <p class="opinions-zone__card-title">très sérieux rapide</p>
+              <p class="opinions-zone__card-meta">Avis déposé par <span class="uppercase">Anonyme,</span> le 29/08/2026, suite à un achat le 07/08/2026</p>
+            </article>
+
+            <article class="opinions-zone__card">
+              <span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:100%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+              <p class="opinions-zone__card-title">enveloppes de très bonnes qualité</p>
+              <p class="opinions-zone__card-meta">Avis déposé par <span class="uppercase">Anonyme,</span> le 28/08/2026, suite à un achat le 17/07/2026</p>
+            </article>
+
+            <article class="opinions-zone__card">
+              <span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:100%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+              <p class="opinions-zone__card-title">Tout est parfait</p>
+              <p class="opinions-zone__card-meta">Avis déposé par <span class="uppercase">Anonyme,</span> le 27/08/2026, suite à un achat le 03/08/2026</p>
+            </article>
+
+            <article class="opinions-zone__card">
+              <span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:100%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+              <p class="opinions-zone__card-title">impeccable</p>
+              <p class="opinions-zone__card-meta">Avis déposé par <span class="uppercase">Anonyme,</span> le 26/08/2026, suite à un achat le 10/08/2026</p>
+            </article>
+
+            <article class="opinions-zone__card">
+              <span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:80%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+              <p class="opinions-zone__card-title">Parfait&nbsp;!<br>Bon service<br>Peut etre revoir les tarifs qui sont parfois élevés</p>
+              <p class="opinions-zone__card-meta">Avis déposé par <span class="uppercase">Anonyme,</span> le 26/08/2026, suite à un achat le 06/08/2026</p>
+            </article>
+
+            <article class="opinions-zone__card">
+              <span class="star-container"><span class="star-row star-row--bg">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="star-row star-row--fg" style="width:100%">&#9733;&#9733;&#9733;&#9733;&#9733;</span></span>
+              <p class="opinions-zone__card-title">process simple et rapide</p>
+              <p class="opinions-zone__card-meta">Avis déposé par <span class="uppercase">Anonyme,</span> le 26/08/2026, suite à un achat le 06/08/2026</p>
+            </article>
+
+          </div>
+          <button type="button" class="opinions-zone__nav opinions-zone__nav--prev" aria-label="Précédent" onclick="document.getElementById('opinions-track').scrollBy({left:-264,behavior:'smooth'})"><span class="icon-dropdown"></span></button>
+          <button type="button" class="opinions-zone__nav opinions-zone__nav--next" aria-label="Suivant" onclick="document.getElementById('opinions-track').scrollBy({left:264,behavior:'smooth'})"><span class="icon-dropdown"></span></button>
+        </div>
+      </div>
+      <div class="wrap wrap--home opinions-zone__footer">
+        <a class="opinions-zone__footer-link" href="https://www.avis-verifies.com/avis-clients/raja.fr" target="_blank" rel="noreferrer">Voir tous les avis client <span class="icon-dropdown-sided"></span></a>
+      </div>
+    </section>
+
+    <section class="newsletter-zone">
+      <div class="wrap wrap--home">
+        <div class="newsletter-zone__card">
+          <div class="newsletter-zone__form">
+            <h2 class="newsletter-zone__title">S'inscrire à la newsletter</h2>
+            <p class="newsletter-zone__text">Informations et bons plans personnalisés<br><a href="#">Voir notre charte de confidentialité</a></p>
+            <div class="newsletter-zone__field">
+              <input type="email" id="newsletter-email" placeholder="Adresse email *">
+            </div>
+            <p class="newsletter-zone__helper">Inscrivez-vous à notre newsletter pour recevoir nos offres promotionnelles et actualités. Vous pouvez à tout moment utiliser le lien de désabonnement intégré dans chaque courrier. Cliquez ici pour en savoir plus sur <a href="#">la gestion de vos données et vos droits</a>.</p>
+            <button type="button" class="newsletter-zone__submit">S'abonner</button>
+          </div>
+          <div class="newsletter-zone__image">
+            <img src="assets/img/catalogue-footer.png" alt="Catalogue RAJA">
+          </div>
+          <div class="newsletter-zone__catalog">
+            <h2 class="newsletter-zone__title">Demander un catalogue</h2>
+            <p class="newsletter-zone__catalog-lead">En ligne ou en version papier&nbsp;!</p>
+            <p class="newsletter-zone__text">La demande de catalogue est gratuite et se fait en quelques clics.</p>
+            <button type="button" class="newsletter-zone__cta">Consulter ou recevoir</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__seo-social">
+      <div class="wrap wrap--home">
+        <div class="footer__seo-social__seo">
+          <p><strong>RAJA, le partenaire de toutes les entreprises pour leurs besoins en emballages</strong>, vous propose le plus grand choix d'emballages, de caisse carton, d'adhésif, de film étirable, de boîte postale, d'enveloppe, de pochette, de sac et sachet en plastique, de sac kraft, de palette, de rouleau de bulles, d'étiquette, de sac et d'emballage publicitaires, d'emballage alimentaire, de produit d'hygiène et d'entretien, de fourniture de bureau, de machine et système d'emballage.</p>
+          <div class="footer__seo-social__more">
+            <p id="seo-more-toggle"><strong>Tout ce qu'il vous faut pour emballer, protéger, stocker, fermer, sécuriser, conditionner, palettiser et expédier tous vos produits.</strong> <a href="#" class="link-blue bold" onclick="document.getElementById('seo-more-text').classList.remove('hidden'); document.getElementById('seo-more-toggle').classList.add('hidden'); return false;">Lire la suite</a></p>
+            <div class="hidden" id="seo-more-text">
+              <h2>Emballages, fournitures et équipements pour les entreprises</h2>
+              <p>En tant que fournisseur d'emballages pour professionnels, RAJA s'engage à fournir des solutions de qualité pour répondre aux besoins de tous les secteurs d'activité. Que vous soyez dans l'e-commerce, la logistique, ou le commerce de détail, nous avons des produits adaptés à toutes vos exigences.</p>
+              <p>En tant que leader de l'emballages, RAJA met à votre disposition un large choix d'emballages, disponible directement sur notre site web. Vous trouverez des caisses en carton, des emballages pour le transport et toute sorte de conditionnement pour emballer et protéger vos marchandises.</p>
+              <p>Vous avez besoin de petites unités ou de grandes quantités ? De nombreuses options s'offrent à vous avec RAJA !</p>
+              <h2>Zoom sur les produits phares RAJA</h2>
+              <h3>Caisses en carton sur mesure</h3>
+              <p>Concevez vos emballages sur mesure pour garantir une présentation professionnelle et adaptée à vos produits. Les <a class="link-blue" href="#">caisses et cartons sur mesure</a> de RAJA sont spécialement conçus pour les entreprises ayant des besoins spécifiques en termes de formats et de dimensions. Que vous ayez des produits de tailles non standards ou que vous souhaitiez optimiser l'espace dans vos colis, nos <a class="link-blue" href="#">emballages personnalisés</a> s'adaptent à toutes vos exigences.</p>
+              <p>Idéales pour le transport et la protection des marchandises, ces caisses sont également disponibles dans des modèles prêts à l'emploi. Voici un aperçu de nos différents types de <a class="link-blue" href="#">caisses et cartons</a> :</p>
+              <ul>
+                <li><a class="link-blue" href="#">cartons à hauteur variable</a></li>
+                <li><a class="link-blue" href="#">boîte en carton petit format</a></li>
+                <li><a class="link-blue" href="#">carton grand format</a></li>
+                <li><a class="link-blue" href="#">cartons simple cannelure</a></li>
+                <li><a class="link-blue" href="#">caisses en carton double cannelure</a></li>
+                <li><a class="link-blue" href="#">caisses en carton triple cannelure</a></li>
+                <li><a class="link-blue" href="#">caisses en carton américaines</a></li>
+                <li><a class="link-blue" href="#">carton pour colis</a></li>
+              </ul>
+              <p>Si vous avez besoin d'aide pour <a class="link-blue" href="#">choisir vos caisses et cartons</a>, n'hésitez pas à demander conseil à nos équipes d'experts disponibles par téléphone au 01 49 90 49 90, par mail à contact@raja.fr ou via notre formulaire de contact.</p>
+              <h3>Emballages alimentaires</h3>
+              <p>Les <a class="link-blue" href="#">emballages alimentaires</a> proposés par RAJA sont conçus pour répondre aux exigences des professionnels de l'alimentaire. Nous avons notamment des caisses avec des calages pour bouteilles ou des manchons, des <a class="link-blue" href="#">sachets alimentaires</a> pour les confiseries, des récipients avec couvercle pour les petits plats à emporter, ou encore de la vaisselle jetable tels que des couverts en bois pour la restauration rapide.</p>
+              <p>Nos solutions assurent une fraîcheur et une protection optimale des aliments tout au long de la chaîne de transport. Nous avons également des <a class="link-blue" href="#">papiers alimentaires</a> pour les produits gras et des <a class="link-blue" href="#">emballages alimentaires plastiques</a> pour une conservation prolongée.</p>
+              <p>Vous souhaitez améliorer davantage l'expérience de vos clients ? Découvrez <a class="link-blue" href="#">tous nos différents types d'emballages</a> :</p>
+              <ul>
+                <li><a class="link-blue" href="#">emballages traiteur</a></li>
+                <li><a class="link-blue" href="#">emballages restauration rapide</a></li>
+                <li><a class="link-blue" href="#">papiers d'emballage</a></li>
+                <li><a class="link-blue" href="#">films d'emballage</a></li>
+                <li>et bien d'autres encore !</li>
+              </ul>
+              <h3>Sacs et sachets kraft</h3>
+              <p>Les <a class="link-blue" href="#">sacs et sachets kraft</a> sont essentiels pour de nombreux commerces, qu'il s'agisse de boutiques, de magasins alimentaires ou de détaillants. Disponibles en différentes formes, tailles et couleurs, ces <a class="link-blue" href="#">emballages jetables</a> en papier kraft sont à la fois esthétiques et pratiques. Ils permettent d'emballer des articles avec soin, tout en soutenant une démarche responsable grâce à leur matériau recyclable.</p>
+              <p>Ces sachets sont parfaits pour emballer toutes sortes de marchandises : fruits et légumes (si agrée contact alimentaire), livres et articles de papeterie, bijoux, cosmétiques, outils et quincailerie ou encore cadeaux et souvenirs.</p>
+              <h3>Emballages de transport</h3>
+              <p>Les emballages de transport RAJA sont conçus pour protéger vos marchandises lors de leur expédition. Que vous ayez besoin d'emballages pour des produits fragiles ou des gros volumes, nous avons ce qu'il vous faut pour une livraison sécurisée. Du <a class="link-blue" href="#">ruban adhésif d'emballage</a> au coussin d'air gonflable, en passant par le papier bulle, vous trouverez des équipements adaptés à tous vos besoins. Nos produits sont conçus pour garantir que vos colis arrivent à destination en parfait état.</p>
+              <p>En plus de sécuriser les marchandises, ces emballages améliorent l'image de votre packaging, ce qui permet de mieux fidéliser votre clientèle. C'est un choix judicieux pour les <a class="link-blue" href="#">emballages de boutique</a> en ligne.</p>
+              <h3>Emballages responsables</h3>
+              <p>Chez RAJA, nous proposons également des <a class="link-blue" href="#">emballages responsables,</a> conçus à partir de matières recyclables et recyclées. Ces emballages sont parfaits pour les entreprises soucieuses de leur impact environnemental. Que vous ayez besoin de papiers, de sacs, ou d'autres solutions d'emballage, vous trouverez dans notre catalogue des produits alliant qualité et durabilité.</p>
+              <p>Les emballages responsables sont parfaits pour renforcer l'image de votre marque, tout en garantissant une sécurité optimale pour vos produits.</p>
+              <h3>Machines et accessoires de manutention</h3>
+              <p>Pour faciliter le transport et la manutention de vos marchandises, RAJA propose une gamme complète de produits et accessoires de manutention. Des transpalettes manuelles aux chariots, en passant par le feuillard pour le maintien des colis, ces outils sont essentiels pour garantir la sécurité de vos produits lors des opérations de manutention.</p>
+              <p>Que ce soit dans un entrepôt ou un centre de distribution, ces équipements permettent de réduire les efforts, tout en optimisant le temps de transport et de stockage.</p>
+              <h2>Des emballages pour tous les secteurs d'activité</h2>
+              <h3>Commerce électronique</h3>
+              <p>Le secteur du commerce électronique est en pleine expansion, et les besoins en emballages adaptés ne cessent de croître. Chez RAJA, nous proposons une gamme variée d'emballages, spécialement conçue pour les entreprises de vente en ligne. Nous avons notamment des <a class="link-blue" href="#">emballages e-commerce</a> robustes pour protéger vos produits pendant le transport, mais aussi des emballages personnalisables pour renforcer votre image de marque.</p>
+              <p>Nos emballages permettent de sécuriser vos envois, tout en optimisant vos coûts logistiques. Vous pouvez les utiliser pour envoyer des vêtements, des produits électroniques ou encore des articles de décoration.</p>
+              <h3>Logistique</h3>
+              <p>Dans le secteur de la logistique, l'efficacité et la sécurité sont essentielles pour assurer un transport optimal des marchandises. RAJA propose une large sélection de produits logistiques, dont des caisses en carton, des <a class="link-blue" href="#">emballages de transport</a> et du film d'emballage. Nos solutions sont conçues pour protéger vos produits, quel que soit leur poids ou leur taille.</p>
+              <p>Par exemple, nos caisses carton en qualité double cannelure sont idéales pour la livraison de marchandises lourdes, tandis que nos films bulles assurent une protection maximale contre les chocs lors de l'expédition. Vous pouvez également opter pour le film étirable pour un maintien de vos palettes. Choisir un emballage de qualité est particulièrement important pour maintenir l'intégrité de vos marchandises lors de la livraison.</p>
+              <h3>Commerces de détail</h3>
+              <p>Les commerces de détail ont appliqué des emballages pratiques, esthétiques et fonctionnels pour satisfaire leurs clients. RAJA propose des <a class="link-blue" href="#">sacs</a> de différentes formes et tailles, parfaits pour les boutiques, ainsi que des boîtes en carton élégantes pour l'emballage des produits.</p>
+              <p>Que vous vendiez des vêtements, des articles de décoration ou des produits alimentaires, nos emballages sont conçus pour répondre à vos besoins spécifiques en matière de conditionnement. Nous nous engageons à offrir le meilleur rapport qualité-prix pour les commerçants.</p>
+              <h3>Commerces alimentaires</h3>
+              <p>Pour les commerces alimentaires, RAJA propose des emballages alimentaires adaptés à toutes les situations. Ces emballages sont souvent choisis pour la vente à emporter, la restauration rapide ou les commerces de détail alimentaire.</p>
+              <p>Par exemple, nos papiers alimentaires sont fabriqués pour préserver la fraîcheur et la qualité des produits, tandis que nos emballages alimentaires en plastique et en carton assurent une conservation optimale. Que vous ayez besoin de sachets, de boîtes en carton ou de films, nos produits répondent aux exigences strictes du secteur alimentaire.</p>
+              <h3>Nettoyage et entretien</h3>
+              <p>Les secteurs du nettoyage et de l'entretien nécessitent des fournitures fiables et efficaces pour maintenir des environnements propres et sécurisés. RAJA propose une grande variété de fournitures d'entretien, dont des produits de nettoyage, des gants ou encore des sacs poubelles.</p>
+              <p>Nos produits sont conçus pour les professionnels qui ont besoin de solutions durables et efficaces pour leurs tâches quotidiennes. Ils peuvent être utilisés dans l'hôtellerie, la restauration, ou tout autre secteur avec des normes élevées d'hygiène.</p>
+              <h2>Optimisez vos solutions d'emballage avec RAJA</h2>
+              <p>Vous êtes à la recherche des meilleurs fournisseurs d'emballages et de fournitures pour votre entreprise ? RAJA se distingue par sa capacité à offrir des solutions complètes et personnalisées aux professionnels de tous les secteurs. Grâce à notre expertise et à notre savoir-faire, nous proposons des emballages et du sur mesure, conçus pour garantir la sécurité et la qualité de vos marchandises. Ces solutions vous permettent de mettre en valeur vos produits, tout en optimisant vos coûts logistiques.</p>
+              <p>Nos services incluent un accompagnement complet, de la conception de vos emballages à la livraison rapide de vos commandes. Vous avez des besoins spécifiques ? Notre service client se tient à votre disposition pour vous fournir des conseils et un devis personnalisé afin de vous assurer un achat simple, rapide et efficace.</p>
+              <p>Faites confiance à RAJA, le fournisseur d'emballage préféré des professionnels !</p>
+              <p><a href="#" class="link-blue bold" onclick="document.getElementById('seo-more-text').classList.add('hidden'); document.getElementById('seo-more-toggle').classList.remove('hidden'); return false;">Réduire</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__link-need">
+      <div class="wrap wrap--home footer__link-need__inner">
+        <div class="footer__link-need__link--group">
+          <div class="footer__link-need__link__list">
+            <div class="footer__link-need__link__list__title">Groupe RAJA</div>
+            <ul class="footer__link-need__link__dropdown">
+              <li><a href="#">Qui sommes-nous ?</a></li>
+              <li><a href="#">Nos engagements</a></li>
+              <li><a href="#">Notre démarche éco-responsable</a></li>
+              <li><a href="#">Rejoindre le groupe</a></li>
+              <li><a href="#">Découvrir le Groupe RAJA</a></li>
+              <li><a href="#">Notre Politique Achat</a></li>
+            </ul>
+          </div>
+          <div class="footer__link-need__link__list">
+            <div class="footer__link-need__link__list__title">Services RAJA</div>
+            <ul class="footer__link-need__link__dropdown">
+              <li><a href="#">Livraison en 24h</a></li>
+              <li><a href="#">Disponibilité en stock</a></li>
+              <li><a href="#">Solutions Grands Comptes</a></li>
+              <li><a href="#">Solutions e-business</a></li>
+              <li><a href="#">Codes Promo</a></li>
+              <li><a href="#">RAJA vous accompagne</a></li>
+              <li><a href="#">Fonctionnalités digitales</a></li>
+            </ul>
+          </div>
+          <div class="footer__link-need__link__list">
+            <div class="footer__link-need__link__list__title">Actualités</div>
+            <ul class="footer__link-need__link__dropdown">
+              <li><a href="#">Actualités RAJA</a></li>
+              <li><a href="#">Témoignages clients</a></li>
+              <li><a href="#">Fonds d'urgence de la Fondation RAJA-Danièle Marcovici</a></li>
+            </ul>
+          </div>
+          <div class="footer__link-need__link__list">
+            <div class="footer__link-need__link__list__title">Personnalisation</div>
+            <ul class="footer__link-need__link__dropdown">
+              <li><a href="#">Emballages personnalisés</a></li>
+              <li><a href="#">Adhésifs personnalisés</a></li>
+              <li><a href="#">Emballages sur mesure</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__link-need__link--block">
+          <div class="footer__link-need__link__list">
+            <div class="footer__link-need__link__list__title">Univers Produits</div>
+            <ul class="footer__link-need__link__dropdown">
+              <li><a href="#">Produits Made in Europe</a></li>
+              <li><a href="#">Produits Marque RAJA</a></li>
+              <li><a href="#">Nouveaux produits</a></li>
+              <li><a href="#">Produits éco-responsables</a></li>
+              <li><a href="#">Tout pour l'emballage</a></li>
+              <li><a href="#">Tout pour l'e-commerce</a></li>
+              <li><a href="#">Tout pour la boutique</a></li>
+              <li><a href="#">Manutention &amp; Stockage</a></li>
+              <li><a href="#">Hygiène, Entretien &amp; Sécurité</a></li>
+              <li><a href="#">Fournitures de bureau</a></li>
+              <li><a href="#">Emballages alimentaires</a></li>
+              <li><a href="#">Produits solidaires</a></li>
+              <li><a href="#">Tous nos univers produits</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__link-need__link--need">
+          <div class="footer__link-need__social">
+            <div class="footer__link-need__social__title">Suivez-nous&nbsp;!</div>
+            <div class="footer__link-need__social__list">
+              <a href="https://www.linkedin.com/company/raja" target="_blank" rel="noopener"><img src="https://raja.scene7.com/is/image/Raja/ALL-footer-social-media-linkedin?fmt=png-alpha&wid=60" alt="Linkedin"></a>
+              <a href="https://www.facebook.com/RAJAEMBALLAGES" target="_blank" rel="noopener"><img src="https://raja.scene7.com/is/image/Raja/ALL-footer-social-media-facebook?fmt=png-alpha&wid=60" alt="Facebook"></a>
+              <a href="https://www.instagram.com/raja_emballages/" target="_blank" rel="noopener"><img src="https://raja.scene7.com/is/image/Raja/ALL-footer-social-media-instagram?fmt=png-alpha&wid=60" alt="Instagram"></a>
+              <a href="https://www.youtube.com/user/Rajaemballage" target="_blank" rel="noopener"><img src="https://raja.scene7.com/is/image/Raja/ALL-footer-social-media-youtube?fmt=png-alpha&wid=60" alt="Youtube"></a>
+              <a href="https://twitter.com/RAJA_Emballages" target="_blank" rel="noopener"><img src="https://raja.scene7.com/is/image/Raja/ALL-footer-social-media-twitter?fmt=png-alpha&wid=60" alt="Twitter"></a>
+              <a href="https://www.raja.fr/blog/" target="_blank" rel="noopener"><img src="https://raja.scene7.com/is/image/Raja/ALL-footer-social-media-blog?fmt=png-alpha&wid=110" alt="Blog RAJA"></a>
+            </div>
+          </div>
+          <div class="footer__link-need__link__list">
+            <div class="footer__link-need__link__list__title"><span class="icon-help"></span> Besoin d'aide&nbsp;?</div>
+            <p class="footer__link-need__link__list__txt">Retrouvez une réponse à toutes vos questions et infos pratiques</p>
+            <ul class="footer__link-need__link__dropdown">
+              <li><a href="#">Contactez-nous</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Formulaire de contact</a></li>
+              <li><a href="#">Plan d'accès</a></li>
+              <li><a href="#">1ère visite</a></li>
+              <li><a href="#">Je m'inscris aux newsletters</a></li>
+              <li><a href="#">Médiateur des relations fournisseurs</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__certificats">
+      <div class="wrap wrap--home footer__certificats__inner">
+        <a title="Fondation RAJA" href="https://www.fondation-raja-marcovici.com" target="_blank" rel="noopener"><img src="assets/img/certif-fondation-raja.png" alt="Fondation RAJA"></a>
+        <img src="assets/img/certif-charte-diversite.png" alt="Charte de la diversité">
+        <a title="RAJA Art" href="https://www.collection-raja-art.com/" target="_blank" rel="noopener"><img src="assets/img/certif-raja-art.png" alt="RAJA Art"></a>
+      </div>
+    </div>
+    <div class="footer__site-payment">
+      <div class="wrap wrap--home footer__site-payment__inner">
+        <a title="Téléchargez la Fiche d'évaluation" href="https://imgnews.raja-group.com/00-structure/footer/fiche_evaluation_EcoVadis_2026.pdf" target="_blank" rel="noopener"><img src="assets/img/certif-ecovadis.png" alt="Ecovadis"></a>
+        <a title="Téléchargez le Certificat" href="https://imgnews.raja-group.com/00-structure/footer/Certificat_ISO_9001_14001_RAJA.pdf" target="_blank" rel="noopener"><img src="assets/img/certif-afaq-iso14001.png" alt="AFAQ ISO 14001"></a>
+        <a title="Téléchargez le Certificat" href="https://imgnews.raja-group.com/00-structure/footer/Certificat_ISO_9001_14001_RAJA.pdf" target="_blank" rel="noopener"><img src="assets/img/certif-afaq-iso9001.png" alt="AFAQ ISO 9001"></a>
+        <img src="assets/img/certif-charte-qualite-fevad.png" alt="Charte Qualité Fevad">
+        <img src="assets/img/certif-charte-relations-fournisseurs.png" alt="Charte RFAR">
+      </div>
+    </div>
+    <div class="footer__countries">
+      <div class="wrap wrap--home">
+        <div class="footer__countries__title">Le groupe RAJA en Europe</div>
+        <div class="footer__countries__list">
+          <a href="https://www.rajapack.de" title="RAJAPACK DE" hreflang="de-de" class="flag-icon-1"></a>
+          <a href="https://www.rajapack.at" title="RAJAPACK AT" hreflang="de-at" class="flag-icon-2"></a>
+          <a href="https://www.rajapack.be/nl_BE/" title="RAJAPACK BE" hreflang="nl-be" class="flag-icon-3"></a>
+          <a href="https://www.rajapack.sk" title="RAJAPACK SK" hreflang="sk-sk" class="flag-icon-4"></a>
+          <a href="https://www.rajapack.dk" title="RAJAPACK DK" hreflang="da-dk" class="flag-icon-5"></a>
+          <a href="https://www.rajapack.es" title="RAJAPACK ES" hreflang="es-es" class="flag-icon-6"></a>
+          <a href="https://www.raja.fr" title="RAJA FR" hreflang="fr-fr" class="flag-icon-7"></a>
+          <a href="https://www.rajapack.it" title="RAJAPACK IT" hreflang="it-it" class="flag-icon-8"></a>
+          <a href="https://www.rajapack.no" title="RAJAPACK NO" hreflang="no-no" class="flag-icon-9"></a>
+          <a href="https://www.rajapack.nl" title="RAJAPACK NL" hreflang="nl-nl" class="flag-icon-10"></a>
+          <a href="https://www.rajapack.pl" title="RAJAPACK PL" hreflang="pl-pl" class="flag-icon-11"></a>
+          <a href="https://www.rajapack.pt" title="RAJAPACK PT" hreflang="pt-pt" class="flag-icon-12"></a>
+          <a href="https://www.rajapack.cz" title="RAJAPACK CZ" hreflang="cs-cz" class="flag-icon-13"></a>
+          <a href="https://www.rajapack.se" title="RAJAPACK SE" hreflang="sv-se" class="flag-icon-14"></a>
+          <a href="https://www.rajapack.ch/fr_CH/" title="RAJAPACK CH" hreflang="fr_ch" class="flag-icon-15"></a>
+          <a href="https://www.rajapack.co.uk/" title="RAJAPACK UK" hreflang="en-GB" class="flag-icon-16"></a>
+          <a href="https://www.rajapack.hu" title="RAJAPACK HU" hreflang="hu-hu" class="flag-icon-17"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 RAJA</span>
+      <a href="#">Mentions légales</a>
+      <a href="#">Confidentialité</a>
+      <a href="#">CGV</a>
+      <a href="#">Cookies</a>
+      <a href="#">Préférences de cookies</a>
+    </div>
+  </footer>
+
+  <script src="scripts/perso.js" defer></script>
+  <script src="scripts/app.js" defer></script>
+</body>
+</html>

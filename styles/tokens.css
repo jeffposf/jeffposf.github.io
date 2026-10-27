@@ -1,0 +1,43 @@
+/* RAJA design tokens — extracted from the real root.min.css (Intershop "RajaNext" theme).
+   Values kept 1:1 with the live site so the clone reads visually identical. */
+:root {
+  /* brand colors */
+  --raja-primary: #276ef1;
+  --raja-secondary: #6121f5;
+  --raja-gradient: linear-gradient(to right, #6121f5, #276ef1);
+  --raja-gradient-hover: linear-gradient(90deg, #4e1cc5 0%, #2058c2 98.98%);
+  --raja-dark: #222831;
+  --raja-text: #393e46;
+  --raja-text-light: #656f84;
+  --raja-grey-border: #e0e4ea;
+  --raja-grey-bg: #f1f4f9;
+  --raja-grey-bg-alt: #f2f4f9;
+  --raja-white: #fff;
+  --raja-success: #46b275;
+  --raja-warning: #ff3137;
+  --raja-orange-promo: #fe9601;
+  --raja-red-badge: #df091d;
+  --raja-yellow-badge: #ffcd00;
+
+  /* type */
+  --raja-font: "Open Sans", Arial, Helvetica, sans-serif;
+  --raja-font-10: 1rem;
+  --raja-font-12: 1.2rem;
+  --raja-font-14: 1.4rem;
+  --raja-font-16: 1.6rem;
+  --raja-font-18: 1.8rem;
+  --raja-font-22: 2.2rem;
+  --raja-font-24: 2.4rem;
+  --raja-font-28: 2.8rem;
+
+  /* shape */
+  --raja-radius: .4rem;
+  --raja-radius-pill: 15rem;
+  --raja-shadow-card: 0 0 6px 0 rgba(0,0,0,.05);
+  --raja-shadow-stat: 0 0 12px 0 rgba(0,0,0,.08);
+  --raja-shadow-light: 0 2px 14px 0 rgba(0,0,0,.1);
+
+  /* layout */
+  --raja-container: 1110px;
+  --raja-container-home: 1184px;
+}
